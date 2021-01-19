@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/XamDemo/XamDemo/XamDemo.Android/google-services.json
+/XamDemo/XamDemo/.DS_Store
+/XamDemo/XamDemo/XamDemo.Android/.DS_Store
+/XamDemo/XamDemo/XamDemo/.DS_Store
