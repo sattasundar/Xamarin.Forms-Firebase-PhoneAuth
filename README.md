@@ -1,4 +1,4 @@
-# Xamarin.Forms-Firebase-PhoneAuth
+# Xamarin.Forms Firebaseb PhoneAuth
 
 Basic phone number authentication demo using Firebase.
 
