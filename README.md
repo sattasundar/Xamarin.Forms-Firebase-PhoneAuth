@@ -98,7 +98,7 @@ After installing the mentioned plugin we need to initialize the plugin in respec
     </dict>
   </array>
 ```
-- To find this *CFBundleURLSchemes <string>*  value, open the GoogleService-Info.plist configuration file, and look for the REVERSED_CLIENT_ID key.
+- To find this *CFBundleURLSchemes <string>*  value, open the GoogleService-Info.plist configuration file, and look for the *REVERSED_CLIENT_ID* key.
 
 - For more specific instructions take a look at the official [Firebase phone auth documentation](https://firebase.google.com/docs/auth/ios/phone-auth?hl=en)
 
