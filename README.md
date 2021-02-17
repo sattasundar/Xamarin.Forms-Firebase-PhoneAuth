@@ -98,7 +98,7 @@ After installing the mentioned plugin we need to initialize the plugin in respec
     </dict>
   </array>
 ```
-- For more specific instructions take a look at the official [Firebase documentation](https://firebase.google.com/docs/auth/ios/start?hl=en)
+- For more specific instructions take a look at the official [Firebase phone auth documentation](https://firebase.google.com/docs/auth/ios/phone-auth?hl=en)
 
 # Note
 
