@@ -6,8 +6,9 @@
              BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Margin="20">
-            <Entry x:Name="entryOTP" Placeholder="Enter OTP" BackgroundColor="AliceBlue" TextColor="Black" PlaceholderColor="Gray"/>
-            <Button Text="Verify" Clicked="Verify_OTP" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="entryOTP" Placeholder="Enter OTP" BackgroundColor="AliceBlue" TextColor="Black" PlaceholderColor="Gray"
+                   Visual="Material"/>
+            <Button Text="Verify" Clicked="Verify_OTP" HorizontalOptions="FillAndExpand" Visual="Material"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
