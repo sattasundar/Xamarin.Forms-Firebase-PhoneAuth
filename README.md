@@ -82,7 +82,7 @@ After installing the mentioned plugin we need to initialize the plugin in respec
   <dict>
     <key>keychain-access-groups</key>
     <array>
-      <string>$(AppIdentifierPrefix)my.fancy.app</string>
+      <string>$(AppIdentifierPrefix)com.xamarin.auth</string>
     </array>
   </dict>
 ```
