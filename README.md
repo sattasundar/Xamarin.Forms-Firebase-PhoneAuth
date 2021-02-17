@@ -16,7 +16,7 @@ After installing the mentioned plugin we need to initialize the plugin in respec
 
 #### For Android
 
-In MainActivity.cs
+- In MainActivity.cs
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -47,9 +47,9 @@ In MainActivity.cs
                 );
         }
 
-#### For Android
+#### For iOS
 
-In AppDelegate.cs
+- In AppDelegate.cs
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
@@ -75,6 +75,30 @@ In AppDelegate.cs
                //googleRequestIdToken: "" //set google request id
                );
         }
+ 
+- Enable keychain entitlement in Entitlements.plist:
+
+```xml
+  <dict>
+    <key>keychain-access-groups</key>
+    <array>
+      <string>$(AppIdentifierPrefix)my.fancy.app</string>
+    </array>
+  </dict>
+```
+- In case you are using Authentication via Google, add an url scheme to your apps ```Info.plist```:
+```xml
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>com.googleusercontent.apps.123456-abcdef</string>
+      </array>
+    </dict>
+  </array>
+```
+- For more specific instructions take a look at the official [Firebase documentation](https://firebase.google.com/docs/auth/ios/start?hl=en)
 
 # Note
 
