@@ -11,8 +11,8 @@
             <Label Text="Welcome to Xamarin.Forms CrossFirebase Auth!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Entry x:Name="phoneEntry" Placeholder="Enter phone number" BackgroundColor="AliceBlue" TextColor="Black"
-               PlaceholderColor="Gray" Keyboard="Telephone" Margin="20,30,20,0"/>
-        <Button Clicked="ClickMe" Text="Send OTP" BackgroundColor="Blue" TextColor="White" Margin="20,30,20,30"/>
+               PlaceholderColor="Gray" Keyboard="Telephone" Margin="20,30,20,0" Visual="Material"/>
+        <Button Clicked="ClickMe" Text="Send OTP" BackgroundColor="Blue" TextColor="White" Margin="20,30,20,30" Visual="Material"/>
     </StackLayout>
 
 </ContentPage>
