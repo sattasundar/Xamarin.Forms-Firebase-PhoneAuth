@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "479574513872",
+    "project_id": "xamdemo-5753c",
+    "storage_bucket": "xamdemo-5753c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479574513872:android:9bbe8c5bffe035654666d5",
+        "android_client_info": {
+          "package_name": "com.xamarin.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479574513872-7cvqt4ta3492v79nic9sjjokrf34082h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xamarin.auth",
+            "certificate_hash": "6a965c31adaf700c4393dbf6f3db5948e7cc0ebc"
+          }
+        },
+        {
+          "client_id": "479574513872-j6s7bst71qjoip2gc93ni3odukpr7a35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY4xXR664pB2YeBZ2O-nH_QgaaN8cD2G0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479574513872-j6s7bst71qjoip2gc93ni3odukpr7a35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
