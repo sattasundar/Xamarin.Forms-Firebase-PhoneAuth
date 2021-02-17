@@ -6,7 +6,9 @@ Basic phone number authentication demo using Firebase.
 
 # Plugin used:
 
-*Plugin.Firebase*(https://www.nuget.org/packages/Plugin.Firebase/)
+#### Nuget [Plugin.Firebase](https://www.nuget.org/packages/Plugin.Firebase/)
+
+> Install-Package Plugin.Firebase
 
 # Note
 
