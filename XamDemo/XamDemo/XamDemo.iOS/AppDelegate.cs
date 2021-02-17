@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Plugin.Firebase.iOS;
+using Plugin.Firebase.Shared;
 using UIKit;
 
 namespace XamDemo.iOS
