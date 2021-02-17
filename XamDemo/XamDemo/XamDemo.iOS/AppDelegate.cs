@@ -23,9 +23,28 @@ namespace XamDemo.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Xamarin.Forms.FormsMaterial.Init();
+            CrossFirebase.Initialize(app, options, CreateCrossFirebaseSettings());
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        private CrossFirebaseSettings CreateCrossFirebaseSettings()
+        {
+            return new CrossFirebaseSettings(
+               isAnalyticsEnabled: true,
+               isAuthEnabled: true,
+               isCloudMessagingEnabled: true,
+               isDynamicLinksEnabled: true,
+               isFirestoreEnabled: true,
+               isFunctionsEnabled: true,
+               isRemoteConfigEnabled: true,
+               isStorageEnabled: true
+               //facebookId: "",//set facebook id created for app
+               //facebookAppName: "",//app name
+               //googleRequestIdToken: "" //set google request id
+               );
         }
     }
 }
