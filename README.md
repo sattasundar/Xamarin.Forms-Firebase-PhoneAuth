@@ -79,3 +79,11 @@ In AppDelegate.cs
 # Note
 
 Add GoogleService-Info.plist(for iOS) and google-services.json(for Android)and set their build action.
+
+### For iOS
+
+*GoogleService-Info.plist* in your ProjectName.iOS project and set Bundle Action *BundleResource*
+
+### For Android
+
+Add *google-services.json* to the app project and set the Build Action to *GoogleServicesJson*
