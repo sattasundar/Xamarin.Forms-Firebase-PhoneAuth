@@ -31,6 +31,7 @@ namespace XamDemo.Droid
             //FirebaseApp.InitializeApp(Application.Context);
             CrossFirebase.Initialize(this, savedInstanceState, CreateCrossFirebaseSettings());
             HandleIntent(Intent);
+            CreateNotificationChannelIfNeeded();
             LoadApplication(new App());
         }
 
@@ -74,6 +75,22 @@ namespace XamDemo.Droid
         {
             base.OnNewIntent(intent);
             HandleIntent(intent);
+        }
+        private void CreateNotificationChannelIfNeeded()
+        {
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
+            {
+                CreateNotificationChannel();
+            }
+        }
+
+        private void CreateNotificationChannel()
+        {
+            var channelId = $"{PackageName}.general";
+            var notificationManager = (NotificationManager)GetSystemService(NotificationService);
+            var channel = new NotificationChannel(channelId, "General", NotificationImportance.Default);
+            notificationManager.CreateNotificationChannel(channel);
+            FirebaseCloudMessagingImplementation.ChannelId = channelId;
         }
     }
 }
